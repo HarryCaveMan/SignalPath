@@ -56,6 +56,9 @@ sbt "run 7"
 sbt "run 17"
 
 >10926
+sbt "run 90"
+
+>19740274219868223074
 ```
 SBT shell:
 ```sh
@@ -65,6 +68,9 @@ run 7
 run 17
 
 >10926
+run 90
+
+>19740274219868223074
 ```
 
-I have no idea how long my 7 year old economy laptop will take to calculate specialMath(90) <3
+I have no idea how long my 7 year old economy laptop will take to calculate specialMath(90) <3.
