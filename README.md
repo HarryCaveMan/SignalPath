@@ -28,8 +28,43 @@
 ### HexRad
 Simple Scala command line tool for converting hexidecimal representation to radix64
 #### Usage:
+Navigate to the `hexrad` directory.
+
+Bash/MS shell:
 ```sh
-hex-rad 45766964696e74
+sbt "run 45766964696e74"
 
 >RXZpZGludA==
 ```
+SBT shell:
+```sh
+run 45766964696e74
+
+>RXZpZGludA==
+```
+
+### SpecialMath
+Simple Scala replica of [this script](https://github.com/SignalPath/CodeTests/blob/master/specialMath.py).
+#### Usage
+Navigate to the `specialmath` directory.
+
+Bash/MS shell:
+```sh
+sbt "run 7"
+
+>79
+sbt "run 17"
+
+>10926
+```
+SBT shell:
+```sh
+run 7
+
+>79
+run 17
+
+>10926
+```
+
+I have no idea how long my 7 year old economy laptop will take to calculate specialMath(90) <3
