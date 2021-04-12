@@ -19,9 +19,15 @@
 - Ruby: 3
 - Angular: 3
 - Helm: 2
-- Terraform: 2
+- Terraform: 3
 - MQL (MongoDB Query Language): 3
 - SQL: 2
+
+### Honerable Mentions:
+- CloudFormation: 1
+- Ansible: 1
+- Bash: 1
+- Powershell: 1.5
 
 ## Repo Contents:
 
