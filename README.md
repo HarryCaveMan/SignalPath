@@ -62,6 +62,8 @@ sbt "run 7"
 sbt "run 17"
 
 >10926
+# Don't do this in recursive (main) branch 
+# unless you have 1000000000000 years to wait
 sbt "run 90"
 
 >19740274219868223074
@@ -74,9 +76,9 @@ run 7
 run 17
 
 >10926
+# Don't do this in recursive (main) branch 
+# unless you have 1000000000000 years to wait
 run 90
 
 >19740274219868223074
 ```
-
-I have no idea how long my 7 year old economy laptop will take to calculate specialMath(90) <3.
