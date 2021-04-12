@@ -19,9 +19,15 @@
 - Ruby: 3
 - Angular: 3
 - Helm: 2
-- Terraform: 2
+- Terraform: 3
 - MQL (MongoDB Query Language): 3
 - SQL: 2
+
+### Honerable Mentions:
+- CloudFormation: 1
+- Ansible: 1
+- Bash: 1
+- Powershell: 1.5
 
 ## Repo Contents:
 
@@ -56,6 +62,11 @@ sbt "run 7"
 sbt "run 17"
 
 >10926
+# Don't do this in recursive (main) branch 
+# unless you have 1000000000000 years to wait
+sbt "run 90"
+
+>19740274219868223074
 ```
 SBT shell:
 ```sh
@@ -65,6 +76,9 @@ run 7
 run 17
 
 >10926
-```
+# Don't do this in recursive (main) branch 
+# unless you have 1000000000000 years to wait
+run 90
 
-I have no idea how long my 7 year old economy laptop will take to calculate specialMath(90) <3
+>19740274219868223074
+```
