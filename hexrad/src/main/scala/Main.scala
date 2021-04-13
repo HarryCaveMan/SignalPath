@@ -8,6 +8,9 @@ object Main extends App {
     sys.exit(1)
   }
   else {
+    if(args(0).length % 2 != 0) {
+      println("Odd length input not valid hexidecimal representation")
+    }
     try {
       println(encode_hex(args(0)))
     } catch {
@@ -31,7 +34,7 @@ object Main extends App {
   // This is much better than the old method
   // because:
   //  it only uses O(1) memory
-  //  It The overflow limit is the ssize limit of Array and ArrayBuffer
+  //  the overflow limit is the size limit of Array and ArrayBuffer and not BigInteger
   def hex_2_bytes(input:String):Array[Byte] = {
     val bytes:ArrayBuffer[Byte] = ArrayBuffer[Byte]() 
     for (byte_string <- input.grouped(2)) {
