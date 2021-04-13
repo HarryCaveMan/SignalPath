@@ -15,7 +15,9 @@ object Main extends App {
       }
     } 
   }
-  // my poor little laptoop cannot do f(90)
+  // I guess the purpose of this exercise was to force a better implementation
+  // The Naive recursive algorithm is ~1.5^90 time complexity 
+  // 1.5^90 = 7050392822843069.....yikes
   def specialMath(n:Long):Long = {
       if(n==0) 0 else if(n==1) 1 else 
       n + specialMath(n-1)	+ specialMath(n-2)
