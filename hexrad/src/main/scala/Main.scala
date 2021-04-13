@@ -32,9 +32,7 @@ object Main extends App {
     Base64.getEncoder().encodeToString(as_bytes)
   }
   // This is much better than the old method
-  // because:
-  //  it only uses O(1) memory
-  //  the overflow limit is the size limit of Array and ArrayBuffer and not BigInteger
+  // because the overflow limit is the size limit of Array and ArrayBuffer and not BigInteger
   def hex_2_bytes(input:String):Array[Byte] = {
     val bytes:ArrayBuffer[Byte] = ArrayBuffer[Byte]() 
     for (byte_string <- input.grouped(2)) {
