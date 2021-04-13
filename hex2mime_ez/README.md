@@ -20,3 +20,7 @@ cd hex2mime_ez
 
 >RXZpZGludA==
 ```
+If you are running a powershell window that is not in admin mode and has scripting disabled, but your user has admin privileges, you can bypass the execution policy temporatily like this:
+```ps
+powershell.exe -noprofile -executionpolicy bypass -file .\hex2mime.ps1 45766964696e74
+```
