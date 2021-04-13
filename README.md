@@ -30,9 +30,12 @@
 - Powershell: 1.5
 
 ## Repo Contents:
+*NOTE
+All projects depend on `sbt`
 
 ### HexRad
-Simple Scala command line tool for converting hexidecimal representation to radix64
+Simple Scala command line tool for converting hexidecimal representation to base64
+
 #### Usage:
 Navigate to the `hexrad` directory.
 
