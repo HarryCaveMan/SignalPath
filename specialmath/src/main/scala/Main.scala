@@ -1,3 +1,5 @@
+import java.math.BigInteger
+
 object Main extends App {
   if( args.length != 1) {
     // Checks for missing input
@@ -5,7 +7,7 @@ object Main extends App {
     sys.exit(1)
   } else {
     try {
-      val input_n:Int = Integer.parseInt(args(0))
+      val input_n:BigInt = new BigInt(new BigInteger(args(0)))
       println(specialMath(input_n))
     } catch {
       // Checks for parse error due to invalid input
@@ -15,11 +17,15 @@ object Main extends App {
       }
     } 
   }
-  // I guess the purpose of this exercise was to force a better implementation
-  // The Naive recursive algorithm is ~1.5^90 time complexity 
-  // 1.5^90 = 7050392822843069.....yikes
-  def specialMath(n:Long):Long = {
-      if(n==0) 0 else if(n==1) 1 else 
-      n + specialMath(n-1)	+ specialMath(n-2)
-  }
+  def specialMath(n:BigInt):BigInt = {
+      var sum:BigInt = 0
+      var minus_two:BigInt = 0
+      var minus_one:BigInt = 1   
+      for(i <- 2 to n.toInt) {
+        sum = i + minus_one + minus_two
+        minus_two = minus_one
+        minus_one = sum
+      } 
+      sum
+    }
 }
