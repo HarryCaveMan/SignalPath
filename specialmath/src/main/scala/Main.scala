@@ -17,7 +17,6 @@ object Main extends App {
       }
     } 
   }
-  // my poor little laptop cannot do f(90) which is at least O((3/2)**90) time
   def specialMath(n:BigInt):BigInt = {
       var sum:BigInt = 0
       var minus_two:BigInt = 0
