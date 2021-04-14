@@ -16,7 +16,7 @@ chmod 0744 hex2mime.sh
 
 ```ps
 cd hex2mime_ez
-./hex2mime.ps 45766964696e74
+./hex2mime.ps1 45766964696e74
 
 >RXZpZGludA==
 ```
