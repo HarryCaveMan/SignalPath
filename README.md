@@ -31,7 +31,10 @@
 
 ## Repo Contents:
 *NOTE
-All projects depend on `sbt`
+All projects except `hex2mime_ez` depend on `sbt`
+
+### Hex2Mime EZ
+Easy hex-to-base64 converters for bash and powershell. Docs in project folder.
 
 ### HexRad
 Simple Scala command line tool for converting hexidecimal representation to base64
